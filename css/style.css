@@ -1,0 +1,346 @@
+/* &display=swap&subset=cyrillic-ext */
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,700,900&display=swap");
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+img {
+    vertical-align: top;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+html {
+    font-size: 16px;
+    /* по умолчанию */
+}
+
+body {
+    line-height: 1;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    max-width: 1040px;
+    margin: 0 auto;
+}
+
+
+/* ------------GLOBAL------------------ */
+
+
+/* --------HEADER&FOOTER----------------- */
+
+.header,
+.footer {
+    text-align: center;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #c04848;
+    border: 5px double #818a37;
+}
+
+
+/* ---------BACKGROUND----------------- */
+
+.background {
+    border: 5px dashed #1f294b;
+    padding: 20px;
+}
+
+.bgblock {
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px 5px #000;
+    padding: 10px;
+    text-align: center;
+    margin: 0 0 50px 0;
+}
+
+.block,
+.inlineblock,
+.inline {
+    outline: 3px solid #000;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.block,
+.inlineblock,
+.inline span {
+    color: #c04848;
+    text-transform: uppercase;
+}
+
+.block,
+.inlineblock {
+    height: 100px;
+    margin: 0 0 20px 0;
+}
+
+.inlineblock {
+    display: inline-block;
+    width: 100%;
+}
+
+.inline {
+    display: inline;
+    line-height: 200%;
+}
+
+.bgcolor {
+    background: #c07967;
+}
+
+.bgimage {
+    background: url("../img/icon.png");
+}
+
+.bgrepeat {
+    background: url("../img/icon.png") no-repeat;
+}
+
+.bgposition {
+    background: url("../img/icon.png") 50% no-repeat;
+}
+
+.bgsize {
+    background: url("../img/icon.png") 50%/30px 60px no-repeat;
+}
+
+.bgattachment {
+    background: url("../img/icon.png") 50% 70%/30px 60px fixed;
+}
+
+.bg {
+    background: url("../img/icon.png") right 50px/ 40px 100px no-repeat, url("../img/cats.png") 0 0/auto 100%;
+}
+
+.bg1 {
+    background: url("../img/img.jpeg") center/cover no-repeat;
+}
+
+.bg2 {
+    background: url("../img/icon.png") -30px -20px/contain no-repeat;
+}
+
+.bg3 {
+    background: url("../img/icon.png") 0/contain #000;
+}
+
+.bg4 {
+    background: linear-gradient(45deg, #1e5799 0%, #1fa543 39%, #207cca 58%, #1fa543 74%, #7db9e8 100%);
+}
+
+
+/* ---------LIST------------ */
+
+.list {
+    border: 5px dotted #c04848;
+    padding: 25px;
+}
+
+.list li {
+    padding: 0 25px 0 0;
+    min-height: 20px;
+    background: url("../img/icon.png") right 0/20px 20px no-repeat;
+}
+
+.list ul li ul li {
+    margin: 0 0 0 30px;
+}
+
+
+/* ----------CAR-REPAIR---------------- */
+
+.carrepair {
+    font-family: "Roboto", sans-serif;
+}
+
+.contact {
+    padding: 30px;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.15px;
+    color: #4b4b4b;
+}
+
+.contact li {
+    max-width: 234px;
+    padding: 0 0 0 34px;
+    margin: 0 0 16px 0;
+}
+
+.place {
+    background: url("../img/place_icon.png") left 2px no-repeat;
+}
+
+.phone {
+    background: url("../img/smartphone_icon.png") left 2px no-repeat;
+}
+
+.email {
+    background: url("../img/email_icon.png") left 2px no-repeat;
+}
+
+.time {
+    background: url("../img/timer_icon.png") left 2px no-repeat;
+}
+
+.titlebg {
+    padding: 126px 0 0 0;
+    background: url("../img/title_bg.png") center/cover no-repeat;
+}
+
+.titlebg h1 {
+    max-width: 583px;
+    font-weight: 900;
+    font-size: 56px;
+    color: #fff;
+    margin: 0 0 48px 0;
+}
+
+.titlebutton {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 200%;
+    letter-spacing: 0.15px;
+    text-transform: uppercase;
+    color: #fff;
+    background: url("../img/button-arrow.png") right top no-repeat #c40b0b;
+    padding: 12px 50px 12px 19px;
+    margin: 0 0 232px 0;
+}
+
+.impact {
+    color: #fff;
+    padding: 100px 0 0;
+}
+
+.impactcontent {
+    background: url("../img/impact_bg.png") 50% no-repeat #02133c;
+    padding: 112px 0 212px;
+}
+
+.titles,
+.carimage {
+    display: inline-block;
+}
+
+.titles {
+    max-width: 411px;
+    margin: 0 111px 79px 0;
+}
+
+.subtitle {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 200%;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #d5d5d5;
+    background: url("../img/subtitle_icon.png") left -2px no-repeat;
+    padding: 0 0 0 37px;
+    margin: 0 0 31px 0;
+}
+
+.title {
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 117%;
+}
+
+.carimage {
+    vertical-align: top;
+    margin: -182px 0 0 0;
+}
+
+.cards {}
+
+.card {
+    display: inline-block;
+    width: 237px;
+    padding: 0 0 0 87px;
+    margin: 0 24px 0 0;
+    background: url("../img/car_oil_image.png") no-repeat;
+    height: 76px;
+    vertical-align: bottom;
+}
+
+.number {
+    display: inline-block;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 117%;
+    color: #c40b0b;
+    margin: 4px 0 3px 0;
+}
+
+.text {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.15px;
+    color: #f5f5f5;
+}
+
+.card0 {
+    background: url("../img/car_oil_image.png") left top no-repeat;
+}
+
+.card1 {
+    background: url("../img/car_transmission_image.png") left top no-repeat;
+}
+
+.card2 {
+    background: url("../img/car_alignment_image.png") left top no-repeat;
+}
+
+.card3 {
+    background: url("../img/car_engine_image.png") left top no-repeat;
+}
+
+
+/* -------------GLOBAL------------- */
+
+.m0 {
+    margin: 0;
+}
